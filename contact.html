@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V3D</title>
+  <meta name="description" content="Get in touch with Birendra — 3D Artist & Animator based in Kolkata, India." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-left">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Birendra" class="logo-img" />
+      </a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html"     class="nav-link">Home</a>
+      <a href="about.html"     class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="skills.html"    class="nav-link">Skills</a>
+      <a href="contact.html"   class="nav-link active">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn-hire">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">Get In Touch</span>
+      <h1>Let's Work Together</h1>
+      <p>Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-inner">
+
+      <!-- Left: contact info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>virenray07@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Kolkata, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">⏱️</span>
+          <div>
+            <strong>Response Time</strong>
+            <p>Within 24 hours</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💼</span>
+          <div>
+            <strong>Availability</strong>
+            <p>Open to freelance &amp; full-time</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💰</span>
+          <div>
+            <strong>Rate</strong>
+            <p>Starting from $50/hr</p>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-link">ArtStation</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Twitter</a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <form class="contact-form" id="contactForm"
+            action="https://formspree.io/f/xwvazolp"
+            method="POST">
+        <input type="hidden" name="_replyto"  value="virenray07@gmail.com" />
+        <input type="hidden" name="_subject"  value="New portfolio inquiry" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Your Name</label>
+            <input id="cf-name" type="text" name="name"
+                   placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Your Email</label>
+            <input id="cf-email" type="email" name="email"
+                   placeholder="john@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-type">Project Type</label>
+          <select id="cf-type" name="project_type">
+            <option value="">Select a service…</option>
+            <option>3D Modeling</option>
+            <option>Character Design</option>
+            <option>Environment Design</option>
+            <option>Animation</option>
+            <option>VFX / Simulation</option>
+            <option>Product Visualization</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-budget">Budget Range</label>
+          <select id="cf-budget" name="budget">
+            <option value="">Select budget…</option>
+            <option>Under $500</option>
+            <option>$500 – $1,000</option>
+            <option>$1,000 – $5,000</option>
+            <option>$5,000+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5"
+                    placeholder="Tell me about your project, timeline, and goals…"
+                    required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary large">Send Message →</button>
+        <p class="form-success" id="formSuccess">
+          ✓ Message sent! I'll get back to you within 24 hours.
+        </p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="section-header centered">
+      <span class="section-label">Common Questions</span>
+      <h2>FAQ</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>What file formats do you deliver?</h4>
+        <p>FBX, OBJ, BLEND, UASSET, and any format your pipeline needs. Renders are delivered as PNG, EXR, or MP4.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How long does a typical project take?</h4>
+        <p>Simple models take 2–5 days. Complex characters or environments typically take 2–4 weeks. Animations vary by length and complexity.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you offer revisions?</h4>
+        <p>Yes — all projects include 2 rounds of revisions. Additional revisions are billed at my hourly rate.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What's your payment process?</h4>
+        <p>50% upfront to begin, 50% on delivery. I accept PayPal, bank transfer, and crypto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Birendra" class="logo-img" />
+        </a>
+        <p>3D Artist &amp; Animator based in Kolkata, India.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 V3D. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

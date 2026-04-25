@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V3D</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-left">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Birendra" class="logo-img" /></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html"     class="nav-link">Home</a>
+      <a href="about.html"     class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="skills.html"    class="nav-link">Skills</a>
+      <a href="contact.html"   class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search work…" />
+      </div>
+      <a href="contact.html" class="btn-hire">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">My Work</span>
+      <h1>Portfolio</h1>
+      <p>24 projects across 3D art, animation, environments, and more.</p>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio-section">
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-cat="all">All Work</button>
+      <button class="filter-btn" data-cat="3d-art">3D Art</button>
+      <button class="filter-btn" data-cat="character">Character</button>
+      <button class="filter-btn" data-cat="environment">Environment</button>
+      <button class="filter-btn" data-cat="animation">Animation</button>
+      <button class="filter-btn" data-cat="product">Product Viz</button>
+      <button class="filter-btn" data-cat="concept">Concept Art</button>
+    </div>
+
+    <p class="search-info" id="searchInfo"></p>
+    <div class="artwork-grid" id="artworkGrid"></div>
+
+    <div class="load-more-wrap">
+      <button class="btn-load-more" id="loadMoreBtn">Load More Projects</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Birendra" class="logo-img" /></a>
+        <p>3D Artist &amp; Animator based in Kolkata, India.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 V3D. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+      <div class="lightbox-body">
+        <div class="lightbox-img-wrap">
+          <img id="lightboxImg" src="" alt="" />
+        </div>
+        <div class="lightbox-meta">
+          <span class="lightbox-cat" id="lightboxCat"></span>
+          <h2 id="lightboxTitle"></h2>
+          <p id="lightboxDesc" class="lightbox-desc"></p>
+          <div class="lightbox-tags" id="lightboxTags"></div>
+          <div class="lightbox-stats">
+            <span id="lightboxViews">👁 0</span>
+            <span id="lightboxLikes">♥ 0</span>
+            <span id="lightboxDate">📅 —</span>
+          </div>
+          <div class="lightbox-actions">
+            <button class="btn-primary" id="likeBtn">♥ Like</button>
+            <a href="contact.html" class="btn-ghost">Hire Me for Similar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

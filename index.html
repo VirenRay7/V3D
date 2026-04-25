@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V3D</title>
+  <meta name="description" content="Portfolio of Birendra — 3D Artist, Animator & Environment Designer" />
+  <link rel="icon" type="image/png" sizes="1024x1024" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-left">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Birendra" class="logo-img" /></a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html"     class="nav-link active">Home</a>
+      <a href="about.html"     class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="skills.html"    class="nav-link">Skills</a>
+      <a href="contact.html"   class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn-hire">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://picsum.photos/seed/art1/1400/900" alt="" aria-hidden="true" />
+      <div class="hero-bg-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-available">
+        <span class="available-dot"></span> Available for freelance
+      </div>
+      <h1>Hi, I'm <span class="accent">Birendra</span><br />3D Artist &amp; Animator</h1>
+      <p>I craft hyper-realistic 3D models, cinematic animations, and immersive environments. Turning ideas into stunning visuals using Blender, Maya &amp; Unreal Engine.</p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-primary large">View My Work</a>
+        <a href="contact.html"   class="btn-ghost large">Get In Touch</a>
+      </div>
+      <div class="hero-numbers">
+        <div class="hero-num"><span>47+</span><small>Projects</small></div>
+        <div class="hero-num"><span>5+</span><small>Years Exp.</small></div>
+        <div class="hero-num"><span>30+</span><small>Clients</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK STRIP -->
+  <section class="featured-strip">
+    <div class="strip-header">
+      <h2>Featured Projects</h2>
+      <a href="portfolio.html" class="strip-link">View all →</a>
+    </div>
+    <div class="featured-grid" id="featuredGrid"></div>
+  </section>
+
+  <!-- SERVICES STRIP -->
+  <section class="services-strip">
+    <div class="strip-header">
+      <h2>What I Offer</h2>
+      <a href="skills.html" class="strip-link">See all skills →</a>
+    </div>
+    <div class="services-row">
+      <div class="service-card">
+        <span class="service-icon">🎨</span>
+        <h4>3D Modeling</h4>
+        <p>Characters, environments, and products with full PBR pipelines.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🎬</span>
+        <h4>Animation</h4>
+        <p>Cinematic sequences, character rigs, and motion capture cleanup.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">✨</span>
+        <h4>VFX & Simulation</h4>
+        <p>Fire, fluid, smoke, and particle effects for film and games.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">💡</span>
+        <h4>Rendering</h4>
+        <p>Photorealistic renders with advanced lighting and compositing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <h2>Ready to bring your vision to life?</h2>
+      <p>Let's collaborate on your next 3D project.</p>
+      <a href="contact.html" class="btn-primary large">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Birendra" class="logo-img" /></a>
+        <p>3D Artist &amp; Animator based in Kolkata, India.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 V3D. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
